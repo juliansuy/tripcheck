@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — TripCheck</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f6fa;
+      color: #1f2937;
+      line-height: 1.7;
+      padding: 0 16px 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a237e, #3949ab);
+      color: #fff;
+      text-align: center;
+      padding: 48px 24px 40px;
+      margin: 0 -16px 40px;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; opacity: 0.85; font-size: 0.95rem; }
+
+    .container { max-width: 740px; margin: 0 auto; }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.07);
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a237e;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .icon { font-size: 1.3rem; }
+
+    p  { margin-bottom: 10px; font-size: 0.95rem; color: #374151; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      color: #374151;
+    }
+    ul li { margin-bottom: 6px; }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .badge-green  { background: #dcfce7; color: #16a34a; }
+    .badge-blue   { background: #e8eaf6; color: #1a237e; }
+    .badge-yellow { background: #ffedd5; color: #ea580c; }
+
+    .highlight {
+      background: #e8eaf6;
+      border-left: 4px solid #1a237e;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 0.92rem;
+      color: #1a237e;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #9ca3af;
+      margin-top: 40px;
+    }
+    footer a { color: #1a237e; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚗 TripCheck</h1>
+  <p>Política de Privacidad</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2><span class="icon">📋</span> Información general</h2>
+    <p>
+      Esta política de privacidad aplica a la aplicación <strong>TripCheck</strong>
+      (identificador de paquete: <code>com.tripcheck</code>) disponible en Google Play Store.
+    </p>
+    <p>
+      Al usar TripCheck, aceptas las prácticas descritas en este documento.
+      Si tienes preguntas, contáctanos a través del correo indicado al final.
+    </p>
+    <p><strong>Última actualización:</strong> Abril 2026</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔍</span> ¿Qué datos recopila TripCheck?</h2>
+
+    <div class="highlight">
+      TripCheck <strong>no recopila, transmite ni comparte</strong> ningún dato personal
+      fuera de tu dispositivo.
+    </div>
+
+    <p>La aplicación almacena localmente en tu teléfono únicamente:</p>
+    <ul>
+      <li>Distancia de recogida y de viaje (en kilómetros)</li>
+      <li>Duración estimada del viaje (en minutos)</li>
+      <li>Precio bruto de la oferta de Uber</li>
+      <li>Cálculos derivados: costo de combustible, ganancia neta, puntaje</li>
+      <li>Marca de tiempo (hora en que apareció la oferta)</li>
+    </ul>
+    <p>
+      Estos datos <strong>no contienen información personal identificable</strong>:
+      no se guarda tu nombre, número de teléfono, ubicación GPS, datos de cuenta de Uber
+      ni ningún dato del pasajero.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📸</span> Captura de pantalla (MediaProjection)</h2>
+    <p>
+      TripCheck utiliza el permiso de <strong>captura de pantalla</strong> del sistema Android
+      para leer los datos de la oferta que aparece en la app de Uber.
+    </p>
+    <ul>
+      <li>La captura ocurre <strong>solo mientras el servicio está activo</strong> y tú lo has autorizado.</li>
+      <li>El reconocimiento de texto (OCR) se realiza <strong>completamente en tu dispositivo</strong>
+          mediante Google ML Kit — ninguna imagen o texto se envía a servidores externos.</li>
+      <li>Solo se procesan los datos numéricos de la oferta (distancia, tiempo, precio).
+          No se captura ni almacena ninguna otra información visible en pantalla.</li>
+      <li>Las imágenes capturadas <strong>no se guardan en ningún archivo</strong>;
+          son procesadas en memoria y descartadas inmediatamente.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🪟</span> Permiso de superposición (Overlay)</h2>
+    <p>
+      TripCheck solicita el permiso <em>"Mostrar sobre otras aplicaciones"</em> para
+      mostrar el panel de análisis flotante encima de la app de Uber.
+    </p>
+    <p>
+      Este panel solo muestra información calculada localmente. No transmite datos.
+      Puedes revocar este permiso en cualquier momento desde
+      <strong>Ajustes → Aplicaciones → TripCheck → Mostrar sobre otras apps</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📢</span> Publicidad (Google AdMob)</h2>
+    <p>
+      La versión gratuita de TripCheck muestra anuncios proporcionados por
+      <strong>Google AdMob</strong>. AdMob puede recopilar y usar el
+      <strong>Identificador de publicidad</strong> de tu dispositivo para mostrar
+      anuncios relevantes.
+    </p>
+    <p>
+      Para más información sobre cómo Google usa esta información, consulta la
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+        Política de privacidad de Google
+      </a>.
+    </p>
+    <p>
+      Puedes desactivar los anuncios personalizados en
+      <strong>Ajustes de Google → Anuncios → Inhabilitar personalización de anuncios</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">☁️</span> Copia de seguridad</h2>
+    <p>
+      TripCheck excluye explícitamente tu configuración y el historial de viajes
+      de las copias de seguridad en la nube de Google. Tus datos permanecen
+      en tu dispositivo y no se sincronizan con servidores externos.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">👶</span> Menores de edad</h2>
+    <p>
+      TripCheck está dirigida exclusivamente a conductores adultos de plataformas
+      de transporte. No recopilamos intencionalmente datos de menores de 13 años.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔄</span> Cambios a esta política</h2>
+    <p>
+      Podemos actualizar esta política ocasionalmente. Los cambios se publicarán
+      en esta página con una nueva fecha de actualización. Te recomendamos
+      revisarla periódicamente.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">✉️</span> Contacto</h2>
+    <p>
+      Si tienes preguntas o inquietudes sobre esta política de privacidad,
+      escríbenos a:
+    </p>
+    <p>
+      <!-- REEMPLAZA con tu correo real -->
+      <strong>📧 <a href="mailto:julian.suy@ug.uchile.cl">julian.suy@ug.uchile.cl</a></strong>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 TripCheck · <a href="mailto:julian.suy@ug.uchile.cl">julian.suy@ug.uchile.cl</a></p>
+</footer>
+
+</body>
+</html>
