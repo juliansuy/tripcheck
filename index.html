@@ -116,8 +116,9 @@
     <h2><span class="icon">🔍</span> ¿Qué datos recopila TripCheck?</h2>
 
     <div class="highlight">
-      TripCheck <strong>no recopila, transmite ni comparte</strong> ningún dato personal
-      fuera de tu dispositivo.
+      TripCheck <strong>no recopila ni comparte datos personales identificables</strong>.
+      El único dato técnico que sale del dispositivo son los registros de fallos anónimos,
+      descritos más adelante.
     </div>
 
     <p>La aplicación almacena localmente en tu teléfono únicamente:</p>
@@ -182,6 +183,32 @@
     <p>
       Puedes desactivar los anuncios personalizados en
       <strong>Ajustes de Google → Anuncios → Inhabilitar personalización de anuncios</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🛠️</span> Diagnóstico de errores (Firebase Crashlytics)</h2>
+    <p>
+      TripCheck utiliza <strong>Firebase Crashlytics</strong> (Google LLC) para detectar
+      y registrar fallos de la aplicación de forma automática.
+    </p>
+    <p>Cuando la app se cierra inesperadamente, Crashlytics envía a los servidores de Google:</p>
+    <ul>
+      <li>Modelo del dispositivo y versión del sistema operativo</li>
+      <li>Versión de la aplicación instalada</li>
+      <li>Rastro técnico del error (stack trace)</li>
+      <li>Fecha y hora del fallo</li>
+    </ul>
+    <p>
+      Esta información es <strong>completamente anónima</strong>, no contiene datos
+      personales identificables y se usa exclusivamente para mejorar la estabilidad
+      de la aplicación.
+    </p>
+    <p>
+      Para más información, consulta la
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+        Política de privacidad de Firebase
+      </a>.
     </p>
   </div>
 
